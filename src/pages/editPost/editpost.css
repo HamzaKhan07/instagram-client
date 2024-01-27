@@ -1,0 +1,124 @@
+.editpost{
+    display: flex;
+}
+.editpost .wrapper{
+    flex: 12;
+    padding: 40px 20px;
+}
+.editpost .container{
+    max-width: 600px;
+    padding-left: 60px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.editpost .container p{
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-top: 25px;
+}
+.editpost .container input{
+    margin-top: 10px;
+}
+.editpost .container .uploadDesc{
+    margin-top: 15px;
+    font-family: var(--font-family);
+    padding: 10px;
+}
+.editpost .shareOption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+
+    background: rgb(253, 204, 45);
+    width: 160px;
+    height: 40px;
+
+    border-radius: 3px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.editpost .shareOption .shareOptionText{
+    margin-left: 5px;
+}
+.editpost .shareIcon{
+    font-size: 18px;
+    
+}
+.editpost .shareImgContainer{
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+
+    position: relative;
+}
+.editpost .shareImgContainer .shareImg{
+    width: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+}
+.editpost .shareImgContainer .shareCancelImg{
+    position: absolute;
+    top: 0;
+    right: 5;
+    font-size: 20px;
+
+    opacity: 0.8;
+    cursor: pointer;
+}
+.editpost .wrapper .container .btn{
+    background: rgb(45, 152, 253);
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 3px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.editpost .wrapper .container .loader{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .editpost .wrapper{
+        margin: 0;
+        padding: 40px 5px;
+    }
+    .editpost .container{
+        max-width: 600px;
+        padding: 0 12px;
+    }
+}

@@ -1,0 +1,83 @@
+.leftbar{
+    flex: 2;
+    position: sticky;
+    top: 0px;
+
+    padding: 40px 20px;
+    height: 100vh;
+
+    border-right: 1px solid rgb(228, 228, 228);
+}
+.logo img{
+    width: 110px;
+}
+
+.leftbar .menu{
+    padding: 42px 0px 15px 0px;
+    height: 100%; 
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+.option{
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+    border-radius: 8px;
+
+    margin-bottom: 18px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+.option img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+.text{
+    font-family: var(--font-family);
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    margin-left: 15px;
+}
+
+.option:hover{
+    background: #f3f3f3;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.exploremenu-left{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .homeText, .createText, .profileText{
+        display: none;
+    }
+    .leftbar{
+        flex: 1;
+        padding: 20px 10px;
+    }
+    .leftbar .logo{
+        display: none;
+    }
+    .exploremenu-left{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .leftbar{
+        flex: 1;
+        padding: 0px 8px;
+    }
+}

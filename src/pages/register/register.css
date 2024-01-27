@@ -1,0 +1,128 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register .registerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid rgb(207, 207, 207);
+    padding: 50px 50px;
+}
+.register .registerContainer .profileContainer{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.register .registerContainer .close{
+    position: absolute;
+    top: 0;
+    right: 35%;
+    font-size: 20px;
+
+}
+.register .registerContainer .profileContainer .profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 25px;
+}
+.register .registerContainer .profileContainer .close{
+    cursor: pointer;
+    color: rgb(73, 73, 73);
+}
+.register .registerContainer .logo{
+    width: 190px;
+    margin-bottom: 25px;
+}
+.register .registerContainer input, .register .registerContainer textarea{
+    width: 300px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    background-color: #FAFAFA;
+
+    font-family: var(--font-family);
+}
+.register .registerContainer .btn{
+    width: 300px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #64B3F9;
+}
+
+.register .registerContainer .registerInfo{
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+.register .registerContainer .registerInfo span{
+    color: #64B3F9;
+    font-weight: bold;
+}
+.register .registerContainer .loader{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    .register .registerContainer input, .register .registerContainer textarea{
+        width: 260px;
+    }
+    .register .registerContainer .btn{
+        width: 260px;
+    }
+    .register .registerContainer .profileContainer .profile{
+        width: 80px;
+        height: 80px;
+    }
+    .register .registerContainer{
+        padding: 40px 25px;
+    }
+}

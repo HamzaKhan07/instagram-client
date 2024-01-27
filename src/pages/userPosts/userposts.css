@@ -1,0 +1,15 @@
+.userPosts{
+    display: flex;
+}
+.userPosts .feed{
+    flex: 6;
+}
+.userPosts .blank{
+    flex: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .userPosts .blank{
+        display: none;
+    }
+}

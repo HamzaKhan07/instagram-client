@@ -1,0 +1,75 @@
+.rightbar{
+    flex: 3;
+    
+    padding: 40px 0px;
+}
+.righttop{
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.heading{
+    font-family: var(--font-family1);
+    font-weight: bold;
+    font-size: 15px;
+
+    color: rgb(133, 133, 133);
+}
+.see-more{
+    font-family: var(--font-family1);
+    font-weight: bold;
+    font-size: 14px;
+
+    color: rgb(133, 133, 133);
+}
+.see-more-link{
+    margin-top: 20px;
+}
+.people-list{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15px;
+}
+.person{
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person-left{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.person-right span{
+    font-family: var(--font-family1);
+    font-size: 14px;
+    font-weight: 700;
+
+    color: rgb(30, 110, 202);
+}
+.person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.person-name{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .rightbar{
+        display: none;
+    }
+}

@@ -1,0 +1,122 @@
+.create{
+    display: flex;
+}
+.create .wrapper{
+    flex: 12;
+    padding: 40px 20px;
+}
+.create .container{
+    max-width: 600px;
+    padding-left: 60px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.create .container p{
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-top: 25px;
+}
+.create .container input{
+    margin-top: 10px;
+}
+.create .container .uploadDesc{
+    margin-top: 15px;
+    font-family: var(--font-family);
+    padding: 10px;
+}
+.shareOption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+
+    background: rgb(253, 204, 45);
+    width: 160px;
+    height: 40px;
+
+    border-radius: 3px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.shareOption .shareOptionText{
+    margin-left: 5px;
+}
+.shareIcon{
+    font-size: 18px;
+    
+}
+.shareImgContainer{
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+
+    position: relative;
+}
+.shareImgContainer .shareImg{
+    width: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+}
+.shareImgContainer .shareCancelImg{
+    position: absolute;
+    top: 0;
+    right: 5;
+    font-size: 20px;
+
+    opacity: 0.8;
+    cursor: pointer;
+}
+.create .wrapper .container .btn{
+    background: rgb(45, 152, 253);
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 3px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.create .wrapper .container .loader{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .create .wrapper{
+        padding: 40px 10px;
+    }
+    .create .container{
+        padding: 0 10px;
+    }
+}

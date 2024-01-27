@@ -1,0 +1,92 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid rgb(207, 207, 207);
+    padding: 50px 50px;
+}
+.login .loginContainer .logo{
+    width: 190px;
+    margin-bottom: 35px;
+}
+.login .loginContainer input{
+    width: 300px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    background-color: #FAFAFA;
+    
+
+}
+.login .loginContainer .btn{
+    width: 300px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #64B3F9;
+}
+
+.login .loginContainer .registerInfo{
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+.login .loginContainer .registerInfo span{
+    color: #64B3F9;
+    font-weight: bold;
+}
+
+.login .loginContainer .loader{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .login .loginContainer input{
+        width: 260px;
+    }
+    .login .loginContainer .btn{
+        width: 260px;
+    }
+    .login .loginContainer{
+        padding: 80px 20px;
+    }
+}

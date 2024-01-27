@@ -1,0 +1,43 @@
+.users{
+    display: flex;
+}
+.users .usersListWrapper{
+    flex: 9;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: center;
+
+}
+.users .usersListWrapper .usersContainer{
+    width: 500px;
+}
+.users .usersListWrapper .usersContainer .heading{
+    font-family: var(--font-family1);
+    font-size: 17px;
+    color: #111;
+}
+
+.users .usersListWrapper .usersContainer .usersList{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+.users .usersListWrapper .usersContainer .usersList .user img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+.users .usersListWrapper .usersContainer .usersList .user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.users .usersListWrapper .usersContainer .usersList .user span{
+    font-family: var(--font-family);
+    font-size: 15px;
+}
